@@ -9,7 +9,6 @@
 (require 'package)
 (add-to-list 'package-archives
 	     '("melpa" . "http://melpa.org/packages/") t)
-(package-initialize)
 
 (defvar *plw-required-packages* '((magit 24 4)
 				  auto-complete
