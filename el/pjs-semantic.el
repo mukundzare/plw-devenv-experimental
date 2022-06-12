@@ -183,10 +183,11 @@ the semantic cache to see what needs to be changed."
 	      (let ((line (string-to-number (match-string-no-properties 1 tags)))
 		    (char (string-to-number (match-string-no-properties 2 tags))))
 		(save-excursion
+          (require 'modus-themes)
 		  (let ((specific-overlay (make-overlay (progn (goto-char start) (next-line (1- line)) (beginning-of-line)(forward-char char) (point))
 							(line-end-position))))
 		    (overlay-put specific-overlay
-				 'face pjs-semantic-error-highlight)
+				 'face 'modus-themes-intense-red)
 		    (overlay-put specific-overlay
 				 'pjs-error t)
 		    (overlay-put specific-overlay
@@ -194,7 +195,7 @@ the semantic cache to see what needs to be changed."
 	    ;; otherwise create an error overlay for the whole block
 	    (let ((error-overlay (make-overlay start end)))
 	      (overlay-put error-overlay
-			   'face pjs-semantic-error-font)
+			   'face 'modus-themes-intense-red)
 	      (overlay-put error-overlay
 			   'pjs-error t)
 	      (overlay-put error-overlay

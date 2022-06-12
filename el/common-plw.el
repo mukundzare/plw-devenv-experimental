@@ -8,11 +8,12 @@
 
 ;;Colors
 (custom-set-faces
- '(font-lock-string-face ((((class color) (background light)) (:foreground "green3"))))
+ '(font-lock-string-face ((((class color) (background light)) (:foreground "turquoise3"))))
  '(font-lock-preprocessor-face ((((class color) (background light)) (:foreground "blue"))))
- '(font-lock-keyword-face ((((class color) (background light)) (:foreground "red"))))
- '(font-lock-comment-face ((((class color) (background light)) (:foreground "blue"))))
- '(font-lock-function-name-face ((((class color) (background light)) (:foreground "orange")))))
+ '(font-lock-keyword-face ((((class color) (background light)) (:foreground "maroon"))))
+ '(font-lock-comment-face ((((class color) (background light)) (:foreground "SteelBlue3"))))
+ '(font-lock-function-name-face ((((class color) (background light)) (:foreground "SeaGreen"))))
+ '(font-lock-variable-name-face ((((class color) (background light)) (:foreground "DeepPink2")))))
 
 ;;general emacs config
 (custom-set-variables
