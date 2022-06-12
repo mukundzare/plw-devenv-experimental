@@ -17,4 +17,4 @@ CVS/*
 dist
 zip
 *.labl
-
+*common-plw.el

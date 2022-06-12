@@ -50,41 +50,9 @@
 
 ;;------------- general emacs configuration ----------------
 
-;;split the window horizontally by default
-(setq split-height-threshold 10)	; default is 80
-
-;;parenthesis matching
-(show-paren-mode 1)
-(setq show-paren-delay 0) ;;show matching parenthesis immediatly
-
-;; no sound when typing
-(setq ring-bell-function 'ignore)
-
-;;cursor configuration
-(blink-cursor-mode 0) ;;no blinking curor !
-;;(set-cursor-color "indian red") ;;light red
-
-;;scrollbar on the right
-(setq scroll-bar-mode-explicit t)
-(set-scroll-bar-mode `right) 
-
-;;Ctrl+z = undo
-(global-set-key [(control z)] 'undo)
-;;Ctrl+tab : change winsdow
-(global-set-key [(control tab)] 'other-window)
-
-;; magit status 
-(global-set-key (kbd "C-c C-g")    'magit-status)
-
-;; do not check commit line length
-(setq git-commit-finish-query-functions nil)
-
 ;;make sure emacs does not ask us to apply these parameters
 (custom-set-variables
  '(safe-local-variable-values (quote ((Package . OPX2-USER) (Syntax . Common-Lisp)))))
-
-;;use system clipboard
-(setq x-select-enable-clipboard t)
 
 (setq js-indent-level 2)
 
