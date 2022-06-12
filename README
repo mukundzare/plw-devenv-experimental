@@ -1,4 +1,8 @@
-This repository contains the source files used by the Planisware Runtime Development Environment.
+This repository is a fork of the Planisware Runtime Development Environment.
+
+This repo contains certain modifications and enhancements that I need for my workflow.
+
+--- The following has been left as it is from the original repository ---
 
 To build the environment from the source : 
 
@@ -24,4 +28,4 @@ git pull
 cd runtime
 python make.py env
 
-This work is provided under the MIT license, as mentionned in the files header and in the LICENSE file that must be provided with this source code. It is also provided "as is", with no warranty of any kind as mentionned in the license file
+This work is provided under the MIT license, as mentionned in the files header and in the LICENSE file that must be provided with this source code. It is also code. It is also provideprovided "as is", with no warranty of any kind as mentionned in the license file
