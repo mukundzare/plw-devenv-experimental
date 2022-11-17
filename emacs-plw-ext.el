@@ -40,19 +40,13 @@
 (when (eq *javascript-evaluator-mode* :repl)
   (load (fullpath-relative-to-current-file "el/javascript-evaluator.el")))
 
-(defvar *custom-theme* 'tangotango)
-
-;; dark theme
-(when (and (>= emacs-major-version 24)
-	   *custom-theme*)
-  (load-theme *custom-theme* t))
-
-
 ;;------------- general emacs configuration ----------------
 
 ;;make sure emacs does not ask us to apply these parameters
 (custom-set-variables
- '(safe-local-variable-values (quote ((Package . OPX2-USER) (Syntax . Common-Lisp)))))
+ '(safe-local-variable-values (quote
+                               ((Package . OPX2-USER)
+                                (Syntax . Common-Lisp)))))
 
 (setq js-indent-level 2)
 
